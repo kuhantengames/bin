@@ -21,6 +21,8 @@ alias lsofi='lsof -Pn -i'
 alias gradle='./gradlew'
 alias gw='./gradlew'
 
+alias sshup='eval "$(ssh-agent -s)"'
+
 export EDITOR=vim
 
 # include optional git branch in green, then current directory in yellow
