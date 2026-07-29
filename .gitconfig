@@ -11,7 +11,7 @@
     h = log --graph --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]\\ %Creset%C(yellow)(%ar)" --decorate
     hb = log --graph --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%B%Cblue" --decorate
     co = checkout
-    cm = checkout master
+    cm = checkout main
     br = branch
     bra = branch -av
     brc = branch -a --contains
@@ -26,6 +26,7 @@
     ds = diff --name-status
     d-s = diff --stat
     d-sl = diff --stat --stat-width=250 --stat-name-width=250
+    pp = pull --prune
     um = update-master
     umr = update-master --return
 [push]
