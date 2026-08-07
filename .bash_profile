@@ -21,7 +21,12 @@ alias lsofi='lsof -Pn -i'
 alias gradle='./gradlew'
 alias gw='./gradlew'
 
-alias sshup='eval "$(ssh-agent -s)"'
+# This variable is normally set when you run $(eval ssh-agent -s)
+# but I override it so there's a consistent location,
+# and ssh-add honors it.
+# Works on WSL Ubuntu
+export SSH_AUTH_SOCK="$HOME/.ssh/agent/s.socketname"
+alias sshup='ssh-agent -a "$SSH_AUTH_SOCK"'
 
 export EDITOR=vim
 
