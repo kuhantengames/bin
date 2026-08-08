@@ -25,8 +25,10 @@ alias gw='./gradlew'
 # but I override it so there's a consistent location,
 # and ssh-add honors it.
 # Works on WSL Ubuntu
-export SSH_AUTH_SOCK="$HOME/.ssh/agent/s.socketname"
-alias sshup='ssh-agent -a "$SSH_AUTH_SOCK"'
+if [[ "$(uname)" != Darwin ]] ; then
+    export SSH_AUTH_SOCK="$HOME/.ssh/agent/s.socketname"
+    alias sshup='ssh-agent -a "$SSH_AUTH_SOCK"'
+fi
 
 export EDITOR=vim
 
