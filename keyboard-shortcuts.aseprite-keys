@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard version="1">
+    <commands>
+        <key command="Undo" shortcut="1"/>
+        <key command="Redo" shortcut="2"/>
+        <key command="NewLayer" shortcut="+"/>
+        <key command="GotoNextFrameWithSameTag" shortcut="." removed="true"/>
+        <key command="DeselectMask" shortcut="8"/>
+        <key command="ChangeColor" shortcut="9" removed="true">
+            <param name="change" value="decrement-index"/>
+            <param name="target" value="foreground"/>
+        </key>
+        <key command="ChangeBrush" shortcut="+" removed="true">
+            <param name="change" value="increment-size"/>
+        </key>
+        <key command="ChangeBrush" shortcut="-" removed="true">
+            <param name="change" value="decrement-size"/>
+        </key>
+        <key command="Zoom" shortcut="1" removed="true">
+            <param name="percentage" value="100"/>
+        </key>
+        <key command="Zoom" shortcut="2" removed="true">
+            <param name="percentage" value="200"/>
+        </key>
+        <key command="Zoom" shortcut="3" removed="true">
+            <param name="percentage" value="400"/>
+        </key>
+        <key command="Zoom" shortcut="4" removed="true">
+            <param name="percentage" value="800"/>
+        </key>
+        <key command="Zoom" shortcut="5" removed="true">
+            <param name="percentage" value="1600"/>
+        </key>
+        <key command="Zoom" shortcut="6" removed="true">
+            <param name="percentage" value="3200"/>
+        </key>
+    </commands>
+    <tools>
+        <key tool="pencil" shortcut="4"/>
+        <key tool="eraser" shortcut="5"/>
+        <key tool="hand" shortcut="."/>
+        <key tool="line" shortcut="-"/>
+        <key tool="rectangle" shortcut="/"/>
+        <key tool="filled_rectangle" shortcut="/"/>
+        <key tool="ellipse" shortcut="*"/>
+    </tools>
+    <quicktools>
+        <key tool="eyedropper" shortcut="9"/>
+        <key tool="hand" shortcut="." removed="true"/>
+        <key tool="lasso" shortcut="7"/>
+        <key tool="pencil" shortcut="4" removed="true"/>
+        <key tool="eraser" shortcut="5" removed="true"/>
+        <key tool="paint_bucket" shortcut="6"/>
+        <key tool="line" shortcut="/" removed="true"/>
+        <key tool="ellipse" shortcut="*" removed="true"/>
+        <key tool="zoom" shortcut="3"/>
+    </quicktools>
+    <actions/>
+    <wheel/>
+    <drag/>
+</keyboard>
